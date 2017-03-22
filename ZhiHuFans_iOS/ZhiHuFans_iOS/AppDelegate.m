@@ -7,6 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "QDUIHelper.h"
+#import "QDCommonUI.h"
+#import "QDTabBarViewController.h"
+#import "QDNavigationController.h"
+#import "QMUIConfigurationTemplate.h"
+#import "YDCategoryViewController.h"
+#import "YDNowHotViewController.h"
+#import "YDHistoryHotViewController.h"
+#import <Ono/Ono.h>
+#import "CellDataModel.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +27,73 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 启动QMUI的配置模板
+    [QMUIConfigurationTemplate setupConfigurationTemplate];
+    
+    // 将全局的控件样式渲染出来
+    [QMUIConfigurationManager renderGlobalAppearances];
+    
+    // QD自定义的全局样式渲染
+    [QDCommonUI renderGlobalAppearances];
+    
+    // 将状态栏设置为希望的样式
+    [QMUIHelper renderStatusBarStyleLight];
+    
+    // 界面
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self createTabBarController];
+    
+//    [self fetchData];
     return YES;
+}
+
+- (void)fetchData {
+    NSData *data = [[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:@"http://www.zhihufans.com"]];
+    NSError *xmlError;
+    ONOXMLDocument *document = [ONOXMLDocument HTMLDocumentWithData:data error:&xmlError];
+    if (xmlError) {
+        NSLog(@"%@",xmlError);
+        return ;
+    }
+    NSMutableArray *dataArray = [NSMutableArray array];
+    [document enumerateElementsWithXPath:@"/html/body/div/div[1]/div/div/div/ul/node()" usingBlock:^(ONOXMLElement *superelement, NSUInteger idx, BOOL *stop) {
+        if ([superelement children].count > 0) {
+            NSLog(@"AAA%@",superelement);
+            ONOXMLElement *childElement = [[superelement children] firstObject];
+            NSString *urlLink = [childElement valueForAttribute:@"href"];
+            NSString *title = [childElement stringValue];
+            [dataArray addObject:[[CellDataModel alloc]initWithTitle:title link:urlLink]];
+        }
+    }];
+}
+
+- (void)createTabBarController {
+    QDTabBarViewController *tabBarViewController = [[QDTabBarViewController alloc] init];
+    
+    // 分类
+    YDCategoryViewController *categoryViewController = [[YDCategoryViewController alloc] init];
+    categoryViewController.hidesBottomBarWhenPushed = NO;
+    QDNavigationController *uikitNavController = [[QDNavigationController alloc] initWithRootViewController:categoryViewController];
+    categoryViewController.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"分类" image:[UIImageMake(@"icon_tabbar_uikit") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:UIImageMake(@"icon_tabbar_uikit_selected") tag:0];
+    
+    // 当前热门
+    YDNowHotViewController *nowHotViewController = [[YDNowHotViewController alloc] init];
+    nowHotViewController.hidesBottomBarWhenPushed = NO;
+    QDNavigationController *componentNavController = [[QDNavigationController alloc] initWithRootViewController:nowHotViewController];
+    nowHotViewController.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"当前热门" image:[UIImageMake(@"icon_tabbar_component") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:UIImageMake(@"icon_tabbar_component_selected") tag:1];
+    
+    // 历史热门
+    YDHistoryHotViewController *historyHotViewController = [[YDHistoryHotViewController alloc] init];
+    historyHotViewController.hidesBottomBarWhenPushed = NO;
+    QDNavigationController *labNavController = [[QDNavigationController alloc] initWithRootViewController:historyHotViewController];
+    historyHotViewController.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"历史热门" image:[UIImageMake(@"icon_tabbar_lab") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:UIImageMake(@"icon_tabbar_lab_selected") tag:2];
+    
+    // window root controller
+    tabBarViewController.viewControllers = @[uikitNavController, componentNavController, labNavController];
+    self.window.rootViewController = tabBarViewController;
+    [self.window makeKeyAndVisible];
 }
 
 

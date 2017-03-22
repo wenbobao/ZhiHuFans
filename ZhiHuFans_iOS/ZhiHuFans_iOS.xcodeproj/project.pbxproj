@@ -8,11 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		39B8EA80C8AF36AF7B206B64 /* libPods-ZhiHuFans_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F34A5D8F984A802598A7C5 /* libPods-ZhiHuFans_iOS.a */; };
-		926E411F655A4ADB157292CA /* libPods-ZhiHuFans_iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9302B94B4F72AC1E5D895181 /* libPods-ZhiHuFans_iOSTests.a */; };
+		C460D7B21E82530C00DB2C07 /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = C460D79B1E82530C00DB2C07 /* QMUIConfigurationTemplate.m */; };
+		C460D7B31E82530C00DB2C07 /* QDCommonGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C460D79E1E82530C00DB2C07 /* QDCommonGridViewController.m */; };
+		C460D7B41E82530C00DB2C07 /* QDCommonGroupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C460D7A01E82530C00DB2C07 /* QDCommonGroupListViewController.m */; };
+		C460D7B51E82530C00DB2C07 /* QDCommonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C460D7A21E82530C00DB2C07 /* QDCommonListViewController.m */; };
+		C460D7B61E82530C00DB2C07 /* QDCommonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C460D7A41E82530C00DB2C07 /* QDCommonTableViewController.m */; };
+		C460D7B71E82530C00DB2C07 /* QDCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C460D7A61E82530C00DB2C07 /* QDCommonViewController.m */; };
+		C460D7B81E82530C00DB2C07 /* QDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C460D7A81E82530C00DB2C07 /* QDNavigationController.m */; };
+		C460D7B91E82530C00DB2C07 /* QDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C460D7AA1E82530C00DB2C07 /* QDTabBarViewController.m */; };
+		C460D7BA1E82530C00DB2C07 /* QDCommonUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C460D7AD1E82530C00DB2C07 /* QDCommonUI.m */; };
+		C460D7BB1E82530C00DB2C07 /* QDUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C460D7AF1E82530C00DB2C07 /* QDUIHelper.m */; };
+		C460D7BC1E82530C00DB2C07 /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C460D7B11E82530C00DB2C07 /* UIImageEffects.m */; };
+		C460D7C31E8255CC00DB2C07 /* YDCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C460D7C21E8255CC00DB2C07 /* YDCategoryViewController.m */; };
+		C460D7C61E82563900DB2C07 /* YDNowHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C460D7C51E82563900DB2C07 /* YDNowHotViewController.m */; };
+		C460D7C91E82564D00DB2C07 /* YDHistoryHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C460D7C81E82564D00DB2C07 /* YDHistoryHotViewController.m */; };
+		C460D7CC1E82603400DB2C07 /* CellDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C460D7CB1E82603400DB2C07 /* CellDataModel.m */; };
 		C469493B1E6D3BCA00C623CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C469493A1E6D3BCA00C623CD /* main.m */; };
 		C469493E1E6D3BCA00C623CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C469493D1E6D3BCA00C623CD /* AppDelegate.m */; };
-		C46949411E6D3BCA00C623CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C46949401E6D3BCA00C623CD /* ViewController.m */; };
-		C46949441E6D3BCA00C623CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46949421E6D3BCA00C623CD /* Main.storyboard */; };
 		C46949461E6D3BCA00C623CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C46949451E6D3BCA00C623CD /* Assets.xcassets */; };
 		C46949491E6D3BCA00C623CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46949471E6D3BCA00C623CD /* LaunchScreen.storyboard */; };
 		C46949541E6D3BCA00C623CD /* ZhiHuFans_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C46949531E6D3BCA00C623CD /* ZhiHuFans_iOSTests.m */; };
@@ -32,16 +44,41 @@
 		468A9505080DBDCD0ABB4873 /* Pods-ZhiHuFans_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhiHuFans_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhiHuFans_iOS/Pods-ZhiHuFans_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		58F34A5D8F984A802598A7C5 /* libPods-ZhiHuFans_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZhiHuFans_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D14B32EAE31453E371668C /* Pods-ZhiHuFans_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhiHuFans_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhiHuFans_iOS/Pods-ZhiHuFans_iOS.release.xcconfig"; sourceTree = "<group>"; };
-		757129BA844E89F81D9DE63C /* Pods-ZhiHuFans_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhiHuFans_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhiHuFans_iOSTests/Pods-ZhiHuFans_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		901C9B2CF092B9BD23B8582D /* Pods-ZhiHuFans_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhiHuFans_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhiHuFans_iOSTests/Pods-ZhiHuFans_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9302B94B4F72AC1E5D895181 /* libPods-ZhiHuFans_iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZhiHuFans_iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C460D79A1E82530C00DB2C07 /* QMUIConfigurationTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplate.h; sourceTree = "<group>"; };
+		C460D79B1E82530C00DB2C07 /* QMUIConfigurationTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplate.m; sourceTree = "<group>"; };
+		C460D79D1E82530C00DB2C07 /* QDCommonGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonGridViewController.h; sourceTree = "<group>"; };
+		C460D79E1E82530C00DB2C07 /* QDCommonGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonGridViewController.m; sourceTree = "<group>"; };
+		C460D79F1E82530C00DB2C07 /* QDCommonGroupListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonGroupListViewController.h; sourceTree = "<group>"; };
+		C460D7A01E82530C00DB2C07 /* QDCommonGroupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonGroupListViewController.m; sourceTree = "<group>"; };
+		C460D7A11E82530C00DB2C07 /* QDCommonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonListViewController.h; sourceTree = "<group>"; };
+		C460D7A21E82530C00DB2C07 /* QDCommonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonListViewController.m; sourceTree = "<group>"; };
+		C460D7A31E82530C00DB2C07 /* QDCommonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonTableViewController.h; sourceTree = "<group>"; };
+		C460D7A41E82530C00DB2C07 /* QDCommonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonTableViewController.m; sourceTree = "<group>"; };
+		C460D7A51E82530C00DB2C07 /* QDCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonViewController.h; sourceTree = "<group>"; };
+		C460D7A61E82530C00DB2C07 /* QDCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonViewController.m; sourceTree = "<group>"; };
+		C460D7A71E82530C00DB2C07 /* QDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNavigationController.h; sourceTree = "<group>"; };
+		C460D7A81E82530C00DB2C07 /* QDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNavigationController.m; sourceTree = "<group>"; };
+		C460D7A91E82530C00DB2C07 /* QDTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTabBarViewController.h; sourceTree = "<group>"; };
+		C460D7AA1E82530C00DB2C07 /* QDTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTabBarViewController.m; sourceTree = "<group>"; };
+		C460D7AC1E82530C00DB2C07 /* QDCommonUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonUI.h; sourceTree = "<group>"; };
+		C460D7AD1E82530C00DB2C07 /* QDCommonUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonUI.m; sourceTree = "<group>"; };
+		C460D7AE1E82530C00DB2C07 /* QDUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDUIHelper.h; sourceTree = "<group>"; };
+		C460D7AF1E82530C00DB2C07 /* QDUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDUIHelper.m; sourceTree = "<group>"; };
+		C460D7B01E82530C00DB2C07 /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
+		C460D7B11E82530C00DB2C07 /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
+		C460D7C11E8255CC00DB2C07 /* YDCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDCategoryViewController.h; sourceTree = "<group>"; };
+		C460D7C21E8255CC00DB2C07 /* YDCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDCategoryViewController.m; sourceTree = "<group>"; };
+		C460D7C41E82563900DB2C07 /* YDNowHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNowHotViewController.h; sourceTree = "<group>"; };
+		C460D7C51E82563900DB2C07 /* YDNowHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNowHotViewController.m; sourceTree = "<group>"; };
+		C460D7C71E82564D00DB2C07 /* YDHistoryHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDHistoryHotViewController.h; sourceTree = "<group>"; };
+		C460D7C81E82564D00DB2C07 /* YDHistoryHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDHistoryHotViewController.m; sourceTree = "<group>"; };
+		C460D7CA1E82603400DB2C07 /* CellDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellDataModel.h; sourceTree = "<group>"; };
+		C460D7CB1E82603400DB2C07 /* CellDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellDataModel.m; sourceTree = "<group>"; };
 		C46949361E6D3BCA00C623CD /* ZhiHuFans_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhiHuFans_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C469493A1E6D3BCA00C623CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C469493C1E6D3BCA00C623CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C469493D1E6D3BCA00C623CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C469493F1E6D3BCA00C623CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C46949401E6D3BCA00C623CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C46949431E6D3BCA00C623CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C46949451E6D3BCA00C623CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C46949481E6D3BCA00C623CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C469494A1E6D3BCA00C623CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,7 +100,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				926E411F655A4ADB157292CA /* libPods-ZhiHuFans_iOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,10 +120,100 @@
 			children = (
 				468A9505080DBDCD0ABB4873 /* Pods-ZhiHuFans_iOS.debug.xcconfig */,
 				63D14B32EAE31453E371668C /* Pods-ZhiHuFans_iOS.release.xcconfig */,
-				901C9B2CF092B9BD23B8582D /* Pods-ZhiHuFans_iOSTests.debug.xcconfig */,
-				757129BA844E89F81D9DE63C /* Pods-ZhiHuFans_iOSTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C460D7981E82530C00DB2C07 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C460D7991E82530C00DB2C07 /* Configuration */,
+				C460D79C1E82530C00DB2C07 /* Controllers */,
+				C460D7AB1E82530C00DB2C07 /* Utils */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C460D7991E82530C00DB2C07 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C460D79A1E82530C00DB2C07 /* QMUIConfigurationTemplate.h */,
+				C460D79B1E82530C00DB2C07 /* QMUIConfigurationTemplate.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		C460D79C1E82530C00DB2C07 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C460D79D1E82530C00DB2C07 /* QDCommonGridViewController.h */,
+				C460D79E1E82530C00DB2C07 /* QDCommonGridViewController.m */,
+				C460D79F1E82530C00DB2C07 /* QDCommonGroupListViewController.h */,
+				C460D7A01E82530C00DB2C07 /* QDCommonGroupListViewController.m */,
+				C460D7A11E82530C00DB2C07 /* QDCommonListViewController.h */,
+				C460D7A21E82530C00DB2C07 /* QDCommonListViewController.m */,
+				C460D7A31E82530C00DB2C07 /* QDCommonTableViewController.h */,
+				C460D7A41E82530C00DB2C07 /* QDCommonTableViewController.m */,
+				C460D7A51E82530C00DB2C07 /* QDCommonViewController.h */,
+				C460D7A61E82530C00DB2C07 /* QDCommonViewController.m */,
+				C460D7A71E82530C00DB2C07 /* QDNavigationController.h */,
+				C460D7A81E82530C00DB2C07 /* QDNavigationController.m */,
+				C460D7A91E82530C00DB2C07 /* QDTabBarViewController.h */,
+				C460D7AA1E82530C00DB2C07 /* QDTabBarViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C460D7AB1E82530C00DB2C07 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C460D7AC1E82530C00DB2C07 /* QDCommonUI.h */,
+				C460D7AD1E82530C00DB2C07 /* QDCommonUI.m */,
+				C460D7AE1E82530C00DB2C07 /* QDUIHelper.h */,
+				C460D7AF1E82530C00DB2C07 /* QDUIHelper.m */,
+				C460D7B01E82530C00DB2C07 /* UIImageEffects.h */,
+				C460D7B11E82530C00DB2C07 /* UIImageEffects.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C460D7BD1E8254F900DB2C07 /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				C460D7CA1E82603400DB2C07 /* CellDataModel.h */,
+				C460D7CB1E82603400DB2C07 /* CellDataModel.m */,
+				C460D7C01E82552B00DB2C07 /* HistoryHot */,
+				C460D7BF1E82552600DB2C07 /* NowHot */,
+				C460D7BE1E82551800DB2C07 /* Category */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		C460D7BE1E82551800DB2C07 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C460D7C11E8255CC00DB2C07 /* YDCategoryViewController.h */,
+				C460D7C21E8255CC00DB2C07 /* YDCategoryViewController.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		C460D7BF1E82552600DB2C07 /* NowHot */ = {
+			isa = PBXGroup;
+			children = (
+				C460D7C41E82563900DB2C07 /* YDNowHotViewController.h */,
+				C460D7C51E82563900DB2C07 /* YDNowHotViewController.m */,
+			);
+			name = NowHot;
+			sourceTree = "<group>";
+		};
+		C460D7C01E82552B00DB2C07 /* HistoryHot */ = {
+			isa = PBXGroup;
+			children = (
+				C460D7C71E82564D00DB2C07 /* YDHistoryHotViewController.h */,
+				C460D7C81E82564D00DB2C07 /* YDHistoryHotViewController.m */,
+			);
+			name = HistoryHot;
 			sourceTree = "<group>";
 		};
 		C469492D1E6D3BCA00C623CD = {
@@ -113,11 +239,10 @@
 		C46949381E6D3BCA00C623CD /* ZhiHuFans_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C460D7BD1E8254F900DB2C07 /* Demos */,
+				C460D7981E82530C00DB2C07 /* Common */,
 				C469493C1E6D3BCA00C623CD /* AppDelegate.h */,
 				C469493D1E6D3BCA00C623CD /* AppDelegate.m */,
-				C469493F1E6D3BCA00C623CD /* ViewController.h */,
-				C46949401E6D3BCA00C623CD /* ViewController.m */,
-				C46949421E6D3BCA00C623CD /* Main.storyboard */,
 				C46949451E6D3BCA00C623CD /* Assets.xcassets */,
 				C46949471E6D3BCA00C623CD /* LaunchScreen.storyboard */,
 				C469494A1E6D3BCA00C623CD /* Info.plist */,
@@ -170,12 +295,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C469495B1E6D3BCA00C623CD /* Build configuration list for PBXNativeTarget "ZhiHuFans_iOSTests" */;
 			buildPhases = (
-				BB5683D55810C170C7D32656 /* [CP] Check Pods Manifest.lock */,
 				C469494B1E6D3BCA00C623CD /* Sources */,
 				C469494C1E6D3BCA00C623CD /* Frameworks */,
 				C469494D1E6D3BCA00C623CD /* Resources */,
-				75BEA1FC2B3600AFB951BC3F /* [CP] Embed Pods Frameworks */,
-				FCD5A40A6B3AFC4B74535019 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,6 +320,7 @@
 				TargetAttributes = {
 					C46949351E6D3BCA00C623CD = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XJ4JAG9GC7;
 						ProvisioningStyle = Automatic;
 					};
 					C469494E1E6D3BCA00C623CD = {
@@ -233,7 +356,6 @@
 			files = (
 				C46949491E6D3BCA00C623CD /* LaunchScreen.storyboard in Resources */,
 				C46949461E6D3BCA00C623CD /* Assets.xcassets in Resources */,
-				C46949441E6D3BCA00C623CD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,21 +384,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		75BEA1FC2B3600AFB951BC3F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhiHuFans_iOSTests/Pods-ZhiHuFans_iOSTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B525DF6D0A2D3EA1795F569C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,21 +397,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhiHuFans_iOS/Pods-ZhiHuFans_iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BB5683D55810C170C7D32656 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F78A36C754D232218F8E662B /* [CP] Embed Pods Frameworks */ = {
@@ -322,21 +414,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhiHuFans_iOS/Pods-ZhiHuFans_iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FCD5A40A6B3AFC4B74535019 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhiHuFans_iOSTests/Pods-ZhiHuFans_iOSTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -344,9 +421,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C46949411E6D3BCA00C623CD /* ViewController.m in Sources */,
+				C460D7C91E82564D00DB2C07 /* YDHistoryHotViewController.m in Sources */,
+				C460D7B41E82530C00DB2C07 /* QDCommonGroupListViewController.m in Sources */,
 				C469493E1E6D3BCA00C623CD /* AppDelegate.m in Sources */,
 				C469493B1E6D3BCA00C623CD /* main.m in Sources */,
+				C460D7BB1E82530C00DB2C07 /* QDUIHelper.m in Sources */,
+				C460D7B71E82530C00DB2C07 /* QDCommonViewController.m in Sources */,
+				C460D7B91E82530C00DB2C07 /* QDTabBarViewController.m in Sources */,
+				C460D7B51E82530C00DB2C07 /* QDCommonListViewController.m in Sources */,
+				C460D7B21E82530C00DB2C07 /* QMUIConfigurationTemplate.m in Sources */,
+				C460D7B81E82530C00DB2C07 /* QDNavigationController.m in Sources */,
+				C460D7C31E8255CC00DB2C07 /* YDCategoryViewController.m in Sources */,
+				C460D7B61E82530C00DB2C07 /* QDCommonTableViewController.m in Sources */,
+				C460D7BC1E82530C00DB2C07 /* UIImageEffects.m in Sources */,
+				C460D7CC1E82603400DB2C07 /* CellDataModel.m in Sources */,
+				C460D7B31E82530C00DB2C07 /* QDCommonGridViewController.m in Sources */,
+				C460D7C61E82563900DB2C07 /* YDNowHotViewController.m in Sources */,
+				C460D7BA1E82530C00DB2C07 /* QDCommonUI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,14 +460,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C46949421E6D3BCA00C623CD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C46949431E6D3BCA00C623CD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C46949471E6D3BCA00C623CD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -483,9 +566,10 @@
 			baseConfigurationReference = 468A9505080DBDCD0ABB4873 /* Pods-ZhiHuFans_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XJ4JAG9GC7;
 				INFOPLIST_FILE = ZhiHuFans_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.YD.ZhiHuFans-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philamlife.ipos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -495,16 +579,16 @@
 			baseConfigurationReference = 63D14B32EAE31453E371668C /* Pods-ZhiHuFans_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XJ4JAG9GC7;
 				INFOPLIST_FILE = ZhiHuFans_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.YD.ZhiHuFans-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philamlife.ipos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		C469495C1E6D3BCA00C623CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 901C9B2CF092B9BD23B8582D /* Pods-ZhiHuFans_iOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ZhiHuFans_iOSTests/Info.plist;
@@ -517,7 +601,6 @@
 		};
 		C469495D1E6D3BCA00C623CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 757129BA844E89F81D9DE63C /* Pods-ZhiHuFans_iOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ZhiHuFans_iOSTests/Info.plist;
